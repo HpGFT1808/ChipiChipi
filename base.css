@@ -2,11 +2,9 @@ body{
     font-family: Calibri, sans-serif;
     color: #183147;
 }
-
 input[type="radio"] {
     display: none;
 }
-
 .header{
     display: flex;
     justify-content: center;
@@ -17,19 +15,14 @@ input[type="radio"] {
         }
     }
 }
-
-
 .main{
     display: flex;
     flex-direction: row-reverse;
 }
-
 .filter{
     display: flex;
     justify-content: center;
-
     margin: 20px;
-
     .sidebar{
         display: flex;
         flex-direction: column;
@@ -44,7 +37,6 @@ input[type="radio"] {
         text-align: center;
         align-items: center;
     }
-
     .buttons{
         & label{
             cursor: pointer;
@@ -67,19 +59,15 @@ input[type="radio"] {
         margin: 10px;
         transition: background-color 0.3s ease;
     }
-
     .buttons:hover{
         background-color: #b1b3b5;
     }
 }
-
-
 .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .cake,
 .biscuit,
 .pie,
@@ -95,28 +83,21 @@ input[type="radio"] {
             max-height: 200px;
             object-fit: cover;
         }
-
     }
-
     & hr{
         color: rgba(223, 226, 229, 0.34);
     }
-
     width: 100%;
     max-width: 500px;
     background-color: #f6f7f8;
     border: 1px solid #dde1e3;
     border-radius: 10px;
     margin: 20px;
-
     .calories{
         margin-left: 20px;
     }
-
     transition: box-shadow 0.3s ease;
-
 }
-
 .cake:hover,
 .biscuit:hover,
 .pie:hover,
@@ -124,29 +105,22 @@ input[type="radio"] {
 .sirniki:hover{
     box-shadow: 5px 5px 5px rgba(83, 83, 83, 0.51);
 }
-
-
 .text-bold{
     font-weight: bold;
 }
-
 .footer{
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
-
-
 @media screen and (max-width: 1200px) {
     .main{
         flex-direction: column;
     }
-
     .filter{
 
         width: 100%;
         margin: 20px;
-
         .sidebar{
             & nav{
                 display: none;
@@ -165,7 +139,6 @@ input[type="radio"] {
             background-color: transparent;
         }
     }
-
     .cake,
     .biscuit,
     .pie,
@@ -175,28 +148,22 @@ input[type="radio"] {
             flex-direction: column;
             padding: 10px;
         }
-
         .calories,
         & hr{
             display: none;
         }
     }
-
 }
-
 @media screen and (max-width: 730px) {
-
     .filter{
         .sidebar{
             padding: 0;
             margin-bottom: 50px;
         }
-
         .buttons{
             margin: 5px;
         }
     }
-
     .cake,
     .biscuit,
     .pie,
@@ -204,15 +171,12 @@ input[type="radio"] {
     .sirniki{
         .photo-and-name{
             padding: 0;
-
         }
         & p{
             display: none;
         }
     }
-
 }
-
 
 #cake:checked ~ .main > .gallery > .biscuit,
 #cake:checked ~ .main > .gallery > .pie,
@@ -220,28 +184,24 @@ input[type="radio"] {
 #cake:checked ~ .main > .gallery > .sirniki{
     display: none;
 }
-
 #biscuit:checked ~ .main > .gallery > .cake,
 #biscuit:checked ~ .main > .gallery > .pie,
 #biscuit:checked ~ .main > .gallery > .tort,
 #biscuit:checked ~ .main > .gallery > .sirniki{
     display: none;
 }
-
 #pie:checked ~ .main > .gallery > .cake,
 #pie:checked ~ .main > .gallery > .biscuit,
 #pie:checked ~ .main > .gallery > .tort,
 #pie:checked ~ .main > .gallery > .sirniki{
     display: none;
 }
-
 #tort:checked ~ .main > .gallery > .cake,
 #tort:checked ~ .main > .gallery > .pie,
 #tort:checked ~ .main > .gallery > .biscuit,
 #tort:checked ~ .main > .gallery > .sirniki{
     display: none;
 }
-
 #sirniki:checked ~ .main > .gallery > .cake,
 #sirniki:checked ~ .main > .gallery > .pie,
 #sirniki:checked ~ .main > .gallery > .tort,
